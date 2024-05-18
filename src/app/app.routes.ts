@@ -13,6 +13,10 @@ export const routes: Routes = [
       {
         path: 'login',
         loadComponent: () => import("./core/auth/login/login.component")
+      },
+      {
+        path: 'register',
+        loadComponent: () => import("./core/auth/register/register.component")
       }
     ]
   },

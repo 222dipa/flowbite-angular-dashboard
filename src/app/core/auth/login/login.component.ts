@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   template: `
     <section class="bg-gray-50 dark:bg-gray-900">
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -47,7 +50,7 @@ import { Component } from '@angular/core';
                 Sign in
               </button>
               <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                Don’t have an account yet? <a href="#"
+                Don’t have an account yet? <a routerLink="/register"
                                               class="font-medium text-blue-700 hover:underline dark:text-blue-600">Sign
                 up</a>
               </p>
