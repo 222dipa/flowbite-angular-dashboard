@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {DarkModeSwitcherComponent} from "../../../../shared/components/dark-mode-switcher.component";
+import {DarkModeSwitcherComponent} from "../../private/components/dark-mode-switcher.component";
 import {LogoComponent} from "../../../../shared/components/logo.component";
 
 @Component({

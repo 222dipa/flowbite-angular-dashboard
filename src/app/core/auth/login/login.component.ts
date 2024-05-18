@@ -45,7 +45,7 @@ import {RouterLink} from "@angular/router";
                 <a href="#" class="text-sm font-medium text-blue-700 hover:underline dark:text-blue-600">Forgot
                   password?</a>
               </div>
-              <button type="submit"
+              <button type="submit" routerLink="/app"
                       class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                 Sign in
               </button>

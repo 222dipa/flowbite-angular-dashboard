@@ -5,10 +5,17 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: '@apply bg-blue-600',
-      }
+    fontFamily: {
+      'body': [
+        'Raleway',
+        'ui-sans-serif',
+        'system-ui',
+      ],
+      'sans': [
+        'Raleway',
+        'ui-sans-serif',
+        'system-ui',
+      ]
     }
   },
   plugins: [
