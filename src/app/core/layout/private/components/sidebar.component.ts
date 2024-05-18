@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {HeaderComponent} from "./header.component";
 import {FooterComponent} from "./footer.component";
 import {RouterOutlet} from "@angular/router";
+import {LogoComponent} from "../../../../shared/components/logo.component";
 
 @Component({
   selector: 'app-sidebar',
@@ -9,7 +10,8 @@ import {RouterOutlet} from "@angular/router";
   imports: [
     HeaderComponent,
     FooterComponent,
-    RouterOutlet
+    RouterOutlet,
+    LogoComponent
   ],
   template: `
     <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
@@ -29,10 +31,7 @@ import {RouterOutlet} from "@angular/router";
       <div class="h-full p-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 shadow">
         <ul class="space-y-2 font-medium">
           <li class="mb-8">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"/>
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-            </a>
+            <app-logo/>
           </li>
           <li>
             <a href="#"
