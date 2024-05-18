@@ -25,7 +25,7 @@ export class DarkModeSwitcherComponent implements OnInit {
 
   ngOnInit() {
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('dashboard-color-theme') === 'dark' || (!('dashboard-color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement?.classList.add('dark');
     } else {
       document.documentElement?.classList.remove('dark')
@@ -35,7 +35,7 @@ export class DarkModeSwitcherComponent implements OnInit {
     var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
 // Change the icons inside the button based on previous settings
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('dashboard-color-theme') === 'dark' || (!('dashboard-color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       themeToggleLightIcon?.classList.remove('hidden');
     } else {
       themeToggleDarkIcon?.classList.remove('hidden');
@@ -50,23 +50,23 @@ export class DarkModeSwitcherComponent implements OnInit {
       themeToggleLightIcon?.classList.toggle('hidden');
 
       // if set via local storage previously
-      if (localStorage.getItem('color-theme')) {
-        if (localStorage.getItem('color-theme') === 'light') {
+      if (localStorage.getItem('dashboard-color-theme')) {
+        if (localStorage.getItem('dashboard-color-theme') === 'light') {
           document.documentElement.classList.add('dark');
-          localStorage.setItem('color-theme', 'dark');
+          localStorage.setItem('dashboard-color-theme', 'dark');
         } else {
           document.documentElement.classList.remove('dark');
-          localStorage.setItem('color-theme', 'light');
+          localStorage.setItem('dashboard-color-theme', 'light');
         }
 
         // if NOT set via local storage previously
       } else {
         if (document.documentElement.classList.contains('dark')) {
           document.documentElement.classList.remove('dark');
-          localStorage.setItem('color-theme', 'light');
+          localStorage.setItem('dashboard-color-theme', 'light');
         } else {
           document.documentElement.classList.add('dark');
-          localStorage.setItem('color-theme', 'dark');
+          localStorage.setItem('dashboard-color-theme', 'dark');
         }
       }
 
