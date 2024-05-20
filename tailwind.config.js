@@ -19,7 +19,7 @@ module.exports = {
           '800': '#1e4baf',
           '900': '#1e408a',
           '950': '#172a54',
-        }
+        },
       }
     },
     fontFamily: {
