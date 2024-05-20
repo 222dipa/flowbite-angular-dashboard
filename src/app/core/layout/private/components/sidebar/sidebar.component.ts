@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {HeaderComponent} from "./header/header.component";
-import {FooterComponent} from "./footer.component";
+import {HeaderComponent} from "../header/header.component";
+import {FooterComponent} from "../footer/footer.component";
 import {RouterOutlet} from "@angular/router";
-import {LogoComponent} from "../../../../shared/components/logo.component";
+import {LogoComponent} from "../../../../../shared/components/logo.component";
 
 @Component({
   selector: 'app-sidebar',

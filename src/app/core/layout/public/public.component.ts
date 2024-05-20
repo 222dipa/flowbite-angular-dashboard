@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import {RouterOutlet} from "@angular/router";
-import {HeaderComponent} from "./components/header.component";
-import {FooterComponent} from "./components/footer.component";
+import {HeaderComponent} from "./components/header/header.component";
+import {FooterComponent} from "./components/footer/footer.component";
 
 
 @Component({
@@ -14,9 +14,11 @@ import {FooterComponent} from "./components/footer.component";
     RouterOutlet
   ],
   template: `
-        <app-header/>
-        <router-outlet/>
-        <app-footer/>
+    <app-header/>
+    <div class="mt-20 md:m-0">
+      <router-outlet/>
+    </div>
+    <app-footer/>
   `,
   styles: ``
 })

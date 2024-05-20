@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {DarkModeSwitcherComponent} from "./dark-mode-switcher.component";
+import {DarkModeSwitcherComponent} from "../../../../../shared/components/dark-mode-switcher.component";
 import {Dropdown, DropdownOptions} from "flowbite";
-import {AvatarDropdownComponent} from "./avatar-dropdown.component";
-import {AppsDropdownComponent} from "./apps-dropdown.component";
-import {NotificationsDropdownComponent} from "./notifications-dropdown.component";
-import {ToggleSidebarComponent} from "./toggle-sidebar.component";
-import {LogoComponent} from "../../../../shared/components/logo.component";
+import {AvatarDropdownComponent} from "./components/avatar-dropdown.component";
+import {AppsDropdownComponent} from "./components/apps-dropdown.component";
+import {NotificationsDropdownComponent} from "./components/notifications-dropdown.component";
+import {ToggleSidebarComponent} from "./components/toggle-sidebar.component";
+import {LogoComponent} from "../../../../../shared/components/logo.component";
 
 @Component({
   selector: 'app-header',
