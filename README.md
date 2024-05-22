@@ -1,27 +1,28 @@
-# FlowbiteAngularDashboard
+# Flowbite Angular Dashboard
+![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
+![Flowbite](https://img.shields.io/badge/-Flowbite-3399FF?style=flat-square&logo=flowbite&logoColor=white)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Starter dashboard using Angular 17 and Flowbite.
 
-## Development server
+## Sommario
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Introduzione](#introduzione)
+- [Installazione](#installazione)
 
-## Code scaffolding
+## Introduzione
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Flowbite Angular Dashboard è un template di partenza per dashboard creato con Angular 17 e Flowbite, progettato per aiutare gli sviluppatori a creare interfacce utente moderne e responsive.
 
-## Build
+## Installazione
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Segui questi passaggi per installare il progetto:
 
-## Running unit tests
+```bash
+# Clona il repository
+git clone https://github.com/222dipa/flowbite-angular-dashboard.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Entra nella directory del progetto
+cd flowbite-angular-dashboard
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Installa le dipendenze
+npm install

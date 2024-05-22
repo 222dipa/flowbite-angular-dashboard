@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {RouterOutlet} from "@angular/router";
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {NgClass} from "@angular/common";
+import {initFlowbite} from "flowbite";
 
 @Component({
   selector: 'app-private',
@@ -24,11 +25,15 @@ import {NgClass} from "@angular/common";
         <router-outlet/>
       </main>
     </div>
+
   `,
   styles: ``
 })
-export default class PrivateComponent {
+export default class PrivateComponent implements OnInit{
 
   mainContentBoxed: boolean = false;
+
+  ngOnInit() {
+  }
 
 }
