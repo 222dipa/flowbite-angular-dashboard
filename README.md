@@ -21,3 +21,6 @@ cd flowbite-angular-dashboard
 
 # Installa le dipendenze
 npm install
+
+# Avvia il progetto
+npm start
