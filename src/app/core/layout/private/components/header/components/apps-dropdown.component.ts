@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {Dropdown, DropdownOptions} from "flowbite";
+import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {Dropdown, DropdownOptions, initFlowbite} from "flowbite";
 
 @Component({
   selector: 'app-apps-dropdown',
@@ -10,7 +10,7 @@ import {Dropdown, DropdownOptions} from "flowbite";
     <button
       type="button"
       id="appsDropdownButton"
-      data-dropdown-toggle="apps-dropdown"
+      data-dropdown-toggle="appsDropdown"
       class="p-2 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
     >
       <span class="sr-only">View notifications</span>
@@ -232,16 +232,6 @@ import {Dropdown, DropdownOptions} from "flowbite";
 export class AppsDropdownComponent implements OnInit {
 
   ngOnInit() {
-    const options: DropdownOptions = {
-      placement: 'bottom',
-      triggerType: 'click',
-      offsetSkidding: 0,
-      offsetDistance: 10,
-      onHide: () => {},
-      onShow: () => {},
-      onToggle: () => {},
-    };
-    const dropdown = new Dropdown(document.getElementById('appsDropdown'), document.getElementById('appsDropdownButton'), options);
   }
 
 }

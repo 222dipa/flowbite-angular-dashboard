@@ -11,7 +11,7 @@ import {Drawer} from "flowbite";
       data-drawer-target="drawer-navigation"
       data-drawer-toggle="drawer-navigation"
       aria-controls="drawer-navigation"
-      (click)="toggleDrawer()"
+      data-drawer-backdrop="true"
       class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
     >
       <svg
@@ -46,32 +46,9 @@ import {Drawer} from "flowbite";
   styles: ``
 })
 export class ToggleSidebarComponent implements OnInit {
-  private drawer: Drawer | undefined;
 
   ngOnInit() {
-    const $targetEl = document.getElementById('drawer-navigation');
-    const options = {
-      placement: 'left',
-      backdrop: true,
-      bodyScrolling: false,
-      edge: false,
-      edgeOffset: '',
-      backdropClasses: 'bg-gray-50/10 dark:bg-gray-900/40 fixed inset-0 z-30 backdrop-blur-sm',
-      onHide: () => {
-      },
-      onShow: () => {
-      },
-      onToggle: () => {
-      },
-    };
-    this.drawer = new Drawer($targetEl, options);
+
   }
 
-  toggleDrawer() {
-    if (this.drawer?._visible) {
-      this.drawer.hide();
-    } else {
-      this.drawer?.show();
-    }
-  }
 }

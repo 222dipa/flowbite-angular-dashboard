@@ -56,15 +56,6 @@ import {Dropdown, DropdownOptions} from "flowbite";
 export class AvatarDropdownComponent implements OnInit{
 
   ngOnInit() {
-    const options: DropdownOptions = {
-      placement: 'bottom',
-      triggerType: 'hover',
-      offsetSkidding: 0,
-      offsetDistance: 10,
-      onHide: () => {},
-      onShow: () => {},
-      onToggle: () => {},
-    };
-    const dropdown = new Dropdown(document.getElementById('dropdownAvatarName'), document.getElementById('dropdownAvatarNameButton'), options);
+
   }
 }
