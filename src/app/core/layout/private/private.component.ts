@@ -5,7 +5,6 @@ import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {NgClass} from "@angular/common";
-import {initFlowbite} from "flowbite";
 
 @Component({
   selector: 'app-private',

@@ -1,11 +1,10 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import {HeaderComponent} from "../header/header.component";
 import {FooterComponent} from "../footer/footer.component";
 import {RouterOutlet} from "@angular/router";
 import {LogoComponent} from "../../../../../shared/components/logo.component";
-import {LucideAngularModule, Book} from "lucide-angular";
 import {IconComponent} from "../../../../../shared/components/icon.component";
-import {Dropdown, DropdownOptions, initFlowbite} from "flowbite";
+import {initFlowbite} from "flowbite";
 
 @Component({
   selector: 'app-sidebar',
