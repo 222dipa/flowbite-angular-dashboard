@@ -2,11 +2,11 @@
 ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
 ![Flowbite](https://img.shields.io/badge/-Flowbite-3399FF?style=flat-square&logo=flowbite&logoColor=white)
 
-Starter dashboard using Angular 17 and Flowbite.
+Starter dashboard using Angular 18 and Flowbite.
 
 ## Introduzione
 
-Flowbite Angular Dashboard è un template di partenza per dashboard creato con Angular 17 e Flowbite, progettato per aiutare gli sviluppatori a creare interfacce utente moderne e responsive.
+Flowbite Angular Dashboard è un template di partenza per dashboard creato con Angular 18 e Flowbite, progettato per aiutare gli sviluppatori a creare interfacce utente moderne e responsive.
 
 ## Installazione
 
